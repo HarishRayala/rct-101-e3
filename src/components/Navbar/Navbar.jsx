@@ -8,7 +8,7 @@ import { AuthContext } from "../../context/AuthContext";
 const Navbar = () => {
   let {isAuth,setisAuth}=useContext(AuthContext)
   return (
-    <div data-cy="navbar">
+    <div data-cy="navbar" className='navbar'>
       <Link data-cy="navbar-home-link" to="/">Home</Link>
       <span data-cy="navbar-cart-items-count">{/* count here */}</span>
       <button data-cy="navbar-login-logout-button" onClick={()=>{
